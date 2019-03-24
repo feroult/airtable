@@ -1,0 +1,67 @@
+name: airtable
+description: Airtable Flame
+
+dependencies:
+  screen:
+  flutter:
+    sdk: flutter
+
+  flame:
+      path: ../flame
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    - assets/images/ninja.png
+    - assets/images/ninja/run-000.png
+    - assets/images/ninja/run-001.png
+    - assets/images/ninja/run-002.png
+    - assets/images/ninja/run-003.png
+    - assets/images/ninja/run-004.png
+    - assets/images/ninja/run-005.png
+    - assets/images/ninja/run-006.png
+    - assets/images/ninja/run-007.png
+    - assets/images/ninja/run-008.png
+    - assets/images/ninja/run-009.png
+    - assets/images/ninja/idle-000.png
+    - assets/images/ninja/idle-001.png
+    - assets/images/ninja/idle-002.png
+    - assets/images/ninja/idle-003.png
+    - assets/images/ninja/idle-004.png
+    - assets/images/ninja/idle-005.png
+    - assets/images/ninja/idle-006.png
+    - assets/images/ninja/idle-007.png
+    - assets/images/ninja/idle-008.png
+    - assets/images/ninja/idle-009.png
+    - assets/images/ninja/glide-000.png
+    - assets/images/ninja/glide-001.png
+    - assets/images/ninja/glide-002.png
+    - assets/images/ninja/glide-003.png
+    - assets/images/ninja/glide-004.png
+    - assets/images/ninja/glide-005.png
+    - assets/images/ninja/glide-006.png
+    - assets/images/ninja/glide-007.png
+    - assets/images/ninja/glide-008.png
+    - assets/images/ninja/glide-009.png    
+    - assets/images/ninja/jump-000.png
+    - assets/images/ninja/jump-001.png
+    - assets/images/ninja/jump-002.png
+    - assets/images/ninja/jump-003.png
+    - assets/images/ninja/jump-004.png
+    - assets/images/ninja/jump-005.png
+    - assets/images/ninja/jump-006.png
+    - assets/images/ninja/jump-007.png
+    - assets/images/ninja/jump-008.png
+    - assets/images/ninja/jump-009.png
+    - assets/images/layers/layer_07_cropped.png
+    - assets/images/layers/layer_07_cropped_mark.png
+    - assets/images/layers/layer_01.png
+    - assets/images/layers/layer_02.png
+    - assets/images/layers/layer_03.png
+    - assets/images/layers/layer_04.png
+    - assets/images/layers/layer_05.png
+    - assets/images/layers/layer_06.png
+    - assets/images/layers/layer_07.png
