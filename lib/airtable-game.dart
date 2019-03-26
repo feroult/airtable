@@ -5,42 +5,41 @@ import 'package:flame/game.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
-import 'package:haunt/ninja_world.dart';
+import 'package:airtable/airtable-world.dart';
 
-class HauntGame extends Game {
+class AirtableGame extends Game {
+  final NinjaWorld world = new NinjaWorld();
 
-  final NinjaWorld ninjaWorld = new NinjaWorld();
-
-  HauntGame() {
+  AirtableGame() {
     Flame.util.addGestureRecognizer(createDragRecognizer());
     Flame.util.addGestureRecognizer(createTapRecognizer());
-    ninjaWorld.initializeWorld();
+    world.initializeWorld();
   }
 
   @override
   void render(Canvas canvas) {
-    ninjaWorld.render(canvas);
+    world.render(canvas);
   }
 
   @override
   void update(double t) {
-    ninjaWorld.update(t);
+    world.update(t);
   }
 
   @override
   void resize(Size size) {
-    ninjaWorld.resize(size);
+    world.resize(size);
   }
 
   GestureRecognizer createDragRecognizer() {
     return new ImmediateMultiDragGestureRecognizer()
-      ..onStart = (Offset position) => ninjaWorld.handleDrag(position);
+      ..onStart = (Offset position) => world.handleDrag(position);
   }
 
   TapGestureRecognizer createTapRecognizer() {
     return new TapGestureRecognizer()
       ..onTapUp = (TapUpDetails details) {
-        ninjaWorld.handleTap(details.globalPosition);
+        world.handleTap(details.globalPosition);
       };
   }
 }

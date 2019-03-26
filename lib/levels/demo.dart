@@ -48,8 +48,8 @@ class WallBody extends BodyComponent {
     final fixtureDef = new FixtureDef();
     fixtureDef.shape = shape;
 
-    fixtureDef.restitution = 0.0;
-    fixtureDef.friction = 0.2;
+    fixtureDef.restitution = 1.0;
+    fixtureDef.friction = 0.0;
     final bodyDef = new BodyDef();
     bodyDef.position = new Vector2(x / 2, y / 2);
     Body groundBody = world.createBody(bodyDef);
