@@ -8,7 +8,7 @@ import 'package:flutter/widgets.dart';
 import 'package:airtable/airtable-world.dart';
 
 class AirtableGame extends Game {
-  final NinjaWorld world = new NinjaWorld();
+  final AirtableWorld world = new AirtableWorld();
 
   AirtableGame() {
     Flame.util.addGestureRecognizer(createDragRecognizer());
