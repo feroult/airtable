@@ -7,20 +7,18 @@ import 'airtable-game.dart';
 
 main() async {
   await Flame.init(orientation: DeviceOrientation.portraitUp);
-  runApp(new HauntGame().widget);
+  runApp(new AirtableGame().widget);
 }
-
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      showPerformanceOverlay: true,
-      title: 'My Awesome App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: new HauntGame().widget
-    );
+        showPerformanceOverlay: true,
+        title: 'My Awesome App',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: new AirtableGame().widget);
   }
 }
